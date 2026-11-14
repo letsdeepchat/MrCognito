@@ -1,0 +1,877 @@
+[
+ {
+  "id": "trap-0000",
+  "fen": "r1bq1rk1/2pp1ppp/p4n2/1p6/2P2P2/2NQ4/PP2BP1P/R3K1R1 w Q - 1 16",
+  "tempting_uci": "g1g7",
+  "tempting_human_prob": 0.324,
+  "solution_uci": "e1c1",
+  "acceptable_ucis": [
+   "e1c1",
+   "d3d4",
+   "g1g5",
+   "d3g3",
+   "g1g3",
+   "f4f5"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 232,
+  "rating": 1723,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0001",
+  "fen": "2kr2nr/1p1nb2p/p1p1p1p1/5p2/bP1P1B2/P4PN1/4N1PP/2R1KB1R w - - 0 17",
+  "tempting_uci": "g3f5",
+  "tempting_human_prob": 0.212,
+  "solution_uci": "e2c3",
+  "acceptable_ucis": [
+   "e2c3",
+   "h2h4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 272,
+  "rating": 1894,
+  "concepts": [
+   "back_rank",
+   "isolated_pawn",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0002",
+  "fen": "rnbqkb1r/pp2ppp1/2p2n1p/4N3/2pP4/2N5/PP2PPPP/R1BQKB1R w KQkq - 0 6",
+  "tempting_uci": "e5f7",
+  "tempting_human_prob": 0.186,
+  "solution_uci": "e5c4",
+  "acceptable_ucis": [
+   "e5c4",
+   "e2e4",
+   "g2g3",
+   "c1f4",
+   "e2e3",
+   "a2a4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 277,
+  "rating": 1931,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0003",
+  "fen": "r2qk2r/p1ppppbp/bpn2np1/3P2B1/2P1P3/2N2N2/PP3PPP/R2QKB1R b KQkq - 0 7",
+  "tempting_uci": "f6e4",
+  "tempting_human_prob": 0.184,
+  "solution_uci": "c6b8",
+  "acceptable_ucis": [
+   "c6b8",
+   "c6a5"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 276,
+  "rating": 1933,
+  "concepts": [
+   "back_rank",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0004",
+  "fen": "r1b1k2r/p1B1nppp/2n1p3/1B1p4/3P4/P3P3/P4PPP/1R2K1NR w Kkq - 1 13",
+  "tempting_uci": "b5c6",
+  "tempting_human_prob": 0.224,
+  "solution_uci": "g1f3",
+  "acceptable_ucis": [
+   "g1f3",
+   "g1e2",
+   "e1d2",
+   "h2h3",
+   "c7d6",
+   "e1e2"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 206,
+  "rating": 1854,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0005",
+  "fen": "r1b1k1nr/1pp2p1p/p1p3p1/4p3/2P1Pq1P/P4N2/P2P1PP1/R1BQ1RK1 b kq - 2 10",
+  "tempting_uci": "f4e4",
+  "tempting_human_prob": 0.317,
+  "solution_uci": "c8g4",
+  "acceptable_ucis": [
+   "c8g4"
+  ],
+  "motif": "zwischenzug",
+  "drop_cp": 251,
+  "rating": 1739,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0006",
+  "fen": "r1bqk2r/p1pp1ppp/2p5/8/2B5/2n1B3/P1P2PPP/R2QK2R w KQkq - 0 10",
+  "tempting_uci": "c4f7",
+  "tempting_human_prob": 0.206,
+  "solution_uci": "d1d4",
+  "acceptable_ucis": [
+   "d1d4",
+   "d1d3",
+   "d1g4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 313,
+  "rating": 1916,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0007",
+  "fen": "1rb1r1k1/p2n1ppp/1ppb4/8/1P1p3P/P7/2PBBPP1/2R1K1NR b K - 4 17",
+  "tempting_uci": "e8e2",
+  "tempting_human_prob": 0.32,
+  "solution_uci": "d7f6",
+  "acceptable_ucis": [
+   "d7f6",
+   "h7h5",
+   "a7a5",
+   "c8a6",
+   "c6c5",
+   "d7e5"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 308,
+  "rating": 1754,
+  "concepts": [
+   "back_rank",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0008",
+  "fen": "r1bqkb1r/1ppp2pp/p4p2/4n3/B7/2P5/PPP2PPP/R1BQR1K1 b kq - 1 9",
+  "tempting_uci": "f8d6",
+  "tempting_human_prob": 0.181,
+  "solution_uci": "f8e7",
+  "acceptable_ucis": [
+   "f8e7"
+  ],
+  "motif": "zwischenzug",
+  "drop_cp": 263,
+  "rating": 1933,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "king_safety",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0009",
+  "fen": "rnbqk2r/pp2bppp/2pp1n2/4N3/2P5/2N5/PPQPPPPP/R1B1KB1R w KQkq - 0 6",
+  "tempting_uci": "e5f7",
+  "tempting_human_prob": 0.595,
+  "solution_uci": "e5f3",
+  "acceptable_ucis": [
+   "e5f3"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 332,
+  "rating": 1378,
+  "concepts": [
+   "back_rank",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0010",
+  "fen": "rnbq1r2/pp2bkp1/2pp1n2/5Q1p/2P5/1PN1P2P/P2P1PP1/R1B1KB1R w KQ - 3 13",
+  "tempting_uci": "f5f6",
+  "tempting_human_prob": 0.779,
+  "solution_uci": "f5g5",
+  "acceptable_ucis": [
+   "f5g5",
+   "f5c2",
+   "f5b1"
+  ],
+  "motif": "pin",
+  "drop_cp": 461,
+  "rating": 1162,
+  "concepts": [
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0011",
+  "fen": "r1b1kb1r/pp3p1p/2n2N2/8/7Q/5N2/Pq2PPPP/R3KB1R b KQkq - 0 11",
+  "tempting_uci": "b2f6",
+  "tempting_human_prob": 0.431,
+  "solution_uci": "e8e7",
+  "acceptable_ucis": [
+   "e8e7"
+  ],
+  "motif": "pin",
+  "drop_cp": 360,
+  "rating": 1616,
+  "concepts": [
+   "back_rank",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0012",
+  "fen": "r1bqk2r/1pp1b1pp/p1p2p2/4p3/3Pn3/P2Q1N2/1PP2PPP/RNB2RK1 b kq - 1 9",
+  "tempting_uci": "c6c5",
+  "tempting_human_prob": 0.197,
+  "solution_uci": "c8f5",
+  "acceptable_ucis": [
+   "c8f5"
+  ],
+  "motif": "pin",
+  "drop_cp": 274,
+  "rating": 1915,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0013",
+  "fen": "r2qk2r/ppp2ppp/2n5/3p4/2BPn1b1/2P2N2/P3QPPP/R1BR2K1 b kq - 3 11",
+  "tempting_uci": "g4f3",
+  "tempting_human_prob": 0.215,
+  "solution_uci": "e8g8",
+  "acceptable_ucis": [
+   "e8g8",
+   "d8d7",
+   "c6e7"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 204,
+  "rating": 1867,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0014",
+  "fen": "rnb1k2r/1p1p1pp1/p2p1q1p/4pN2/2P1n3/8/PP1PPPPP/R1BQKB1R w KQkq - 4 10",
+  "tempting_uci": "f5g7",
+  "tempting_human_prob": 0.22,
+  "solution_uci": "d2d3",
+  "acceptable_ucis": [
+   "d2d3"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 263,
+  "rating": 1880,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "doubled_pawns",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0015",
+  "fen": "rnbr2k1/1p1p1pp1/p2p3p/4p3/2P1q3/BP6/P2PP1PP/R2QKB1R w KQ - 3 14",
+  "tempting_uci": "a3d6",
+  "tempting_human_prob": 0.293,
+  "solution_uci": "d1b1",
+  "acceptable_ucis": [
+   "d1b1",
+   "e2e3"
+  ],
+  "motif": "pin",
+  "drop_cp": 277,
+  "rating": 1782,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0016",
+  "fen": "5rk1/1pp2p1p/r1pqb3/4p1Bn/P7/P2P1PP1/2P4P/RN1Q1R1K b - - 0 17",
+  "tempting_uci": "h5g3",
+  "tempting_human_prob": 0.25,
+  "solution_uci": "f7f6",
+  "acceptable_ucis": [
+   "f7f6",
+   "c6c5",
+   "h5g7",
+   "e6h3",
+   "f7f5",
+   "d6d4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 235,
+  "rating": 1828,
+  "concepts": [
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0017",
+  "fen": "rn1q1rk1/1Qp2pbp/p5p1/3n4/8/2P1P3/P2B1PPP/R3KBNR b KQ - 0 13",
+  "tempting_uci": "g7c3",
+  "tempting_human_prob": 0.705,
+  "solution_uci": "d5b6",
+  "acceptable_ucis": [
+   "d5b6"
+  ],
+  "motif": "overloading",
+  "drop_cp": 293,
+  "rating": 1211,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0018",
+  "fen": "r1b2rk1/p1q1n1pp/2p5/3p2p1/NP1p2P1/BB5P/P1P5/R2Q2KR w - - 2 18",
+  "tempting_uci": "d1d3",
+  "tempting_human_prob": 0.348,
+  "solution_uci": "h1h2",
+  "acceptable_ucis": [
+   "h1h2"
+  ],
+  "motif": "zwischenzug",
+  "drop_cp": 349,
+  "rating": 1729,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0019",
+  "fen": "5b1r/3k1p1p/1pn1p2p/8/1p6/3P2P1/P4P1P/2R1K1NR w K - 2 20",
+  "tempting_uci": "c1c6",
+  "tempting_human_prob": 0.312,
+  "solution_uci": "c1c2",
+  "acceptable_ucis": [
+   "c1c2",
+   "g1e2",
+   "e1f1",
+   "g1f3",
+   "e1d2",
+   "d3d4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 291,
+  "rating": 1760,
+  "concepts": [
+   "doubled_pawns",
+   "isolated_pawn",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0020",
+  "fen": "2r5/3k1p1p/1pnbp2p/8/1p6/3P2P1/P4P1P/2R1K1NR w K - 6 22",
+  "tempting_uci": "c1c6",
+  "tempting_human_prob": 0.293,
+  "solution_uci": "c1c2",
+  "acceptable_ucis": [
+   "c1c2",
+   "g1e2",
+   "e1f1"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 253,
+  "rating": 1774,
+  "concepts": [
+   "doubled_pawns",
+   "isolated_pawn",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0021",
+  "fen": "2rk4/5p1p/1pnbp2p/8/1p6/3P2P1/P2K1P1P/2R3NR w - - 8 23",
+  "tempting_uci": "c1c6",
+  "tempting_human_prob": 0.387,
+  "solution_uci": "d3d4",
+  "acceptable_ucis": [
+   "d3d4",
+   "g1f3",
+   "g1e2",
+   "c1c2",
+   "f2f4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 226,
+  "rating": 1633,
+  "concepts": [
+   "doubled_pawns",
+   "isolated_pawn",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0022",
+  "fen": "rnb1k1nr/pp3ppp/4p3/2ppP3/3Pq3/2P3B1/P1P1BPPP/R2QK1NR b KQkq - 4 8",
+  "tempting_uci": "e4e2",
+  "tempting_human_prob": 0.507,
+  "solution_uci": "b7b6",
+  "acceptable_ucis": [
+   "b7b6",
+   "c5d4",
+   "g8e7",
+   "h7h5"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 576,
+  "rating": 1582,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0023",
+  "fen": "r1b1k1nr/pp1p1ppp/2p5/8/1b2P1P1/2P5/PP3P1P/RNB1KB1R b KQkq - 0 9",
+  "tempting_uci": "b4c3",
+  "tempting_human_prob": 0.248,
+  "solution_uci": "b4c5",
+  "acceptable_ucis": [
+   "b4c5",
+   "b4a5",
+   "b4e7",
+   "b4d6",
+   "b4f8"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 494,
+  "rating": 1917,
+  "concepts": [
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0024",
+  "fen": "r1b1k1nr/pp1n1p1p/2q1p1p1/1N1p4/1b1P2P1/2P1B2N/PP3P1P/R2QKBR1 b Qkq - 0 11",
+  "tempting_uci": "b4c3",
+  "tempting_human_prob": 0.367,
+  "solution_uci": "b4e7",
+  "acceptable_ucis": [
+   "b4e7"
+  ],
+  "motif": "overloading",
+  "drop_cp": 504,
+  "rating": 1753,
+  "concepts": [
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0025",
+  "fen": "r1bqk2r/pp2nppp/3Np3/2ppP3/8/8/PPPQ1PPP/R3K1NR b KQkq - 2 10",
+  "tempting_uci": "d8d6",
+  "tempting_human_prob": 0.58,
+  "solution_uci": "e8f8",
+  "acceptable_ucis": [
+   "e8f8"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 428,
+  "rating": 1430,
+  "concepts": [
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0026",
+  "fen": "r1bq1rk1/ppp2ppp/4pn2/8/QPpn4/2N2N2/3BPPPP/R3KB1R b KQ - 1 9",
+  "tempting_uci": "d4f3",
+  "tempting_human_prob": 0.797,
+  "solution_uci": "d4b3",
+  "acceptable_ucis": [
+   "d4b3",
+   "b7b5",
+   "c8d7"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 230,
+  "rating": 1060,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "middlegame",
+   "open_file",
+   "passed_pawn"
+  ]
+ },
+ {
+  "id": "trap-0027",
+  "fen": "r1bq1knr/pp3ppp/n3p3/2ppP3/3P4/B1P4N/P1P2PPP/R2QKB1R w KQ - 0 8",
+  "tempting_uci": "a3c5",
+  "tempting_human_prob": 0.618,
+  "solution_uci": "f1a6",
+  "acceptable_ucis": [
+   "f1a6"
+  ],
+  "motif": "overloading",
+  "drop_cp": 242,
+  "rating": 1315,
+  "concepts": [
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0028",
+  "fen": "r3k2r/ppp3pp/2n1bp1n/4p3/2P3P1/P1q2N1P/3BBP2/R2QK2R b KQkq - 1 12",
+  "tempting_uci": "c3d2",
+  "tempting_human_prob": 0.225,
+  "solution_uci": "c3b2",
+  "acceptable_ucis": [
+   "c3b2"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 652,
+  "rating": 2002,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0029",
+  "fen": "1rbqk2r/pppp1pp1/2n2n2/2b1p1Np/Q1P5/2N4P/PP1PPPP1/R1B1KB1R b KQk - 3 8",
+  "tempting_uci": "c5f2",
+  "tempting_human_prob": 0.219,
+  "solution_uci": "d7d5",
+  "acceptable_ucis": [
+   "d7d5",
+   "e8g8",
+   "c5e7"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 344,
+  "rating": 1908,
+  "concepts": [
+   "back_rank",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0030",
+  "fen": "1rbq3r/pppp1kp1/1bn5/3Pp2p/Q7/7P/PP1PPPP1/R1B1KB1R b KQ - 0 11",
+  "tempting_uci": "b6f2",
+  "tempting_human_prob": 0.339,
+  "solution_uci": "c6e7",
+  "acceptable_ucis": [
+   "c6e7",
+   "c6d4"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 291,
+  "rating": 1722,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0031",
+  "fen": "1rb2q1r/ppp2kp1/1bp5/4p2p/Q6P/8/PP1PPPP1/R1B1KB1R b KQ - 0 13",
+  "tempting_uci": "b6f2",
+  "tempting_human_prob": 0.197,
+  "solution_uci": "c8f5",
+  "acceptable_ucis": [
+   "c8f5",
+   "h8h6",
+   "f8d6",
+   "f7e8",
+   "f8e7",
+   "c8e6"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 363,
+  "rating": 1944,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0032",
+  "fen": "1r3q1r/ppp2kp1/1bp1b3/4p2p/Q6P/8/PP1PPPPR/R1B1KB2 b Q - 2 14",
+  "tempting_uci": "b6f2",
+  "tempting_human_prob": 0.207,
+  "solution_uci": "f7g8",
+  "acceptable_ucis": [
+   "f7g8",
+   "b8d8",
+   "h8h6",
+   "f8d6",
+   "f7e8",
+   "b6c5"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 299,
+  "rating": 1909,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0033",
+  "fen": "1r5r/ppp2kp1/1bpqb3/4p2p/Q6P/8/PP1PPPPR/R1B1KB2 w Q - 3 15",
+  "tempting_uci": "a4a3",
+  "tempting_human_prob": 0.187,
+  "solution_uci": "e2e3",
+  "acceptable_ucis": [
+   "e2e3",
+   "g2g3",
+   "h2h1",
+   "a4c2",
+   "a2a3"
+  ],
+  "motif": "pin",
+  "drop_cp": 247,
+  "rating": 1920,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0034",
+  "fen": "1r5r/ppp2kp1/1bpqb3/4p2p/Q6P/8/PP1PPPP1/R1B1KB1R b Q - 4 15",
+  "tempting_uci": "b6f2",
+  "tempting_human_prob": 0.219,
+  "solution_uci": "h8h6",
+  "acceptable_ucis": [
+   "h8h6",
+   "f7g8",
+   "b8f8",
+   "h8f8",
+   "b8d8",
+   "f7e8"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 300,
+  "rating": 1893,
+  "concepts": [
+   "back_rank",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0035",
+  "fen": "rn2kb1r/pppb1ppp/8/3N1q2/3P4/8/PP2PPPP/R2QKBNR w KQkq - 1 8",
+  "tempting_uci": "d5c7",
+  "tempting_human_prob": 0.655,
+  "solution_uci": "d5c3",
+  "acceptable_ucis": [
+   "d5c3"
+  ],
+  "motif": "zwischenzug",
+  "drop_cp": 290,
+  "rating": 1279,
+  "concepts": [
+   "back_rank",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0036",
+  "fen": "r2qk2r/ppp2ppp/2n2n2/1N1p4/Pb1P2b1/2P3Q1/1P3P1P/R1B1KBNR b KQkq - 0 10",
+  "tempting_uci": "b4c3",
+  "tempting_human_prob": 0.738,
+  "solution_uci": "e8g8",
+  "acceptable_ucis": [
+   "e8g8",
+   "b4a5",
+   "d8e7"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 315,
+  "rating": 1171,
+  "concepts": [
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame",
+   "open_file"
+  ]
+ },
+ {
+  "id": "trap-0037",
+  "fen": "1rb1k1r1/ppQpqp2/2n1pn2/3P2pp/2P5/2P1P3/PB2BPPP/R3K1NR b KQ - 0 11",
+  "tempting_uci": "f6d5",
+  "tempting_human_prob": 0.194,
+  "solution_uci": "e6d5",
+  "acceptable_ucis": [
+   "e6d5"
+  ],
+  "motif": "overloading",
+  "drop_cp": 418,
+  "rating": 1968,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "king_safety",
+   "loose_pieces",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0038",
+  "fen": "rnb1kbnr/pp2pppp/8/q1N5/3P4/8/PPP2PPP/R1BQKBNR w KQkq - 1 6",
+  "tempting_uci": "b2b4",
+  "tempting_human_prob": 0.199,
+  "solution_uci": "c1d2",
+  "acceptable_ucis": [
+   "c1d2",
+   "c2c3",
+   "d1d2"
+  ],
+  "motif": "hanging_piece",
+  "drop_cp": 202,
+  "rating": 1889,
+  "concepts": [
+   "back_rank",
+   "king_safety",
+   "middlegame"
+  ]
+ },
+ {
+  "id": "trap-0039",
+  "fen": "rnb1k2r/pppp1ppp/4p3/8/2PPn1Pq/2P1BN1P/P3PP2/R2QKB1R b KQkq - 2 10",
+  "tempting_uci": "e4f2",
+  "tempting_human_prob": 0.222,
+  "solution_uci": "h4e7",
+  "acceptable_ucis": [
+   "h4e7",
+   "h4d8",
+   "h4f6"
+  ],
+  "motif": "overloading",
+  "drop_cp": 433,
+  "rating": 1932,
+  "concepts": [
+   "back_rank",
+   "bishop_pair",
+   "doubled_pawns",
+   "isolated_pawn",
+   "loose_pieces",
+   "middlegame"
+  ]
+ }
+]

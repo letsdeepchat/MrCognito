@@ -1,0 +1,446 @@
+[
+ {
+  "id": "spar-0000",
+  "fen": "rnb1kb2/pp2ppp1/2p4r/q2pP2p/3P4/1RNB1N2/P1P2PPP/2Q1K2R b Kq - 5 12",
+  "theme": "isolated_pawn, king_safety, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0001",
+  "fen": "rnb1kb1r/pp2pp2/2p3p1/q2pP2p/3P4/1RNBQN2/P1P2PPP/5RK1 b q - 1 14",
+  "theme": "back_rank, isolated_pawn, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0002",
+  "fen": "rn2k2r/1p2pp2/p1p1b1p1/q2pP1Qp/3P3P/1RNB4/P1P2PP1/3R2K1 b q - 0 18",
+  "theme": "isolated_pawn, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0003",
+  "fen": "1rbqk2r/1pppbppp/p4n2/8/2P2Q2/2N3P1/PP3P1P/R1B1KB1R w KQk - 1 10",
+  "theme": "back_rank, king_safety, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0004",
+  "fen": "1rbqk2r/2ppbppp/pp3n2/8/2P5/2N3P1/PP1Q1P1P/R1B1KB1R w KQk - 0 11",
+  "theme": "back_rank, king_safety, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0005",
+  "fen": "r1b1k2r/pppp1ppp/8/2b1P3/4P3/2P5/PP4PP/RN2KB1R b KQkq - 0 11",
+  "theme": "doubled_pawns, isolated_pawn, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0006",
+  "fen": "r1b1k1nr/pp3ppp/2n1p3/3pP3/5B2/2q2N2/P1P1BPPP/R2Q1RK1 b kq - 1 10",
+  "theme": "back_rank, bishop_pair, isolated_pawn, king_safety, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0007",
+  "fen": "r1bnk1nr/pp3ppp/4p3/3pP3/5B2/2q2N2/P1P1BPPP/R2Q1RK1 w kq - 2 11",
+  "theme": "back_rank, bishop_pair, isolated_pawn, king_safety, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0008",
+  "fen": "rn2k1nr/p2q1ppp/b3p3/1p1p4/3P1B2/P7/P1Q1PPPP/1R2KBNR w Kkq - 4 9",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0009",
+  "fen": "rn2k1nr/p1Bq1ppp/b3p3/1p1p4/3P4/P7/P1Q1PPPP/1R2KBNR b Kkq - 5 9",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0010",
+  "fen": "4k2r/r2b1ppp/1RnBp3/p2p4/3P2P1/P3P3/P4P1P/4K1NR b Kk - 6 19",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0011",
+  "fen": "3nk2r/r2b1ppp/1R1Bp3/p2p4/3P2P1/P3P3/P4P1P/4K1NR w Kk - 7 20",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0012",
+  "fen": "r1b1k1nr/1pp2p1p/p1p2qp1/4p3/2P1P2P/P4N2/P2P1PP1/R1BQK2R b KQkq - 0 9",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0013",
+  "fen": "r1b1k1nr/1pp2p1p/p1p3p1/4p3/2P1Pq1P/P4N2/P2P1PP1/R1BQ1RK1 b kq - 2 10",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0014",
+  "fen": "r1bqk2r/p1pp1ppp/2p5/8/2B5/2n1B3/P1P2PPP/R2QK2R w KQkq - 0 10",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0015",
+  "fen": "r1bqk2r/p1pp1ppp/2p5/3B4/8/3QB3/P1P2PPP/R3K2R b KQkq - 0 11",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0016",
+  "fen": "rnb1kb1r/pp2p2p/2pq1pp1/2PpN3/3P4/2N5/PP1QPPPP/1R2KB1R b Kkq - 0 9",
+  "theme": "back_rank, king_safety, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0017",
+  "fen": "rnbqkb1r/4p2p/1pp2pp1/3p4/3P4/2NN4/PP1QPPPP/1R2KB1R w Kkq - 0 12",
+  "theme": "back_rank, king_safety, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0018",
+  "fen": "1rbqkb1r/pp1n1ppp/2p5/8/1P1pQ3/8/P1PB1PPP/R3KBNR b KQk - 0 10",
+  "theme": "back_rank, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0019",
+  "fen": "r2n2k1/5p1p/p1p1b1pq/Pp1p4/3P2B1/2P1P2P/1R3PP1/2Q2RK1 b - - 1 21",
+  "theme": "isolated_pawn, middlegame",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0020",
+  "fen": "r1b1kb1r/pp3ppp/1qn2B2/3p4/7Q/2N2N2/PP2PPPP/R3KB1R b KQkq - 0 9",
+  "theme": "isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0021",
+  "fen": "rn2k1nr/pp1b1p1p/4p1p1/q2pP3/2pP4/P1P4Q/2P2PPP/R1B1KBNR b KQkq - 1 10",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0022",
+  "fen": "r2q1k1r/ppp2Bpp/3p1n2/nQ2p3/4P1b1/2PP1N2/PP3bPP/RNB1K2R w KQ - 0 10",
+  "theme": "king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0023",
+  "fen": "r2q3r/pp3kpp/2pp1n2/n3p3/1Q2P1b1/2PP1N2/PP3KPP/RNB4R w - - 0 12",
+  "theme": "king_safety, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0024",
+  "fen": "1r1q1r2/pp3kpp/2pp1n2/n3p3/1Q2P3/2PP1P2/PP1N1K1P/1RB4R w - - 3 15",
+  "theme": "isolated_pawn, king_safety, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0025",
+  "fen": "1r1q1r2/p4kpp/1ppp1n2/n3p1B1/1Q2P3/2PP1P2/PP3K1P/1R3N1R b - - 1 16",
+  "theme": "isolated_pawn, king_safety, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0026",
+  "fen": "r1bqk2r/1ppp1p1p/p1n4p/4p3/P1P1P3/2PP1N2/3Q1PPP/R3KB1R b KQkq - 1 10",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0027",
+  "fen": "r1bqk2r/ppp2ppp/2n5/3p4/2BPn3/2P2N2/P3QPPP/R1B1K2R w KQkq - 0 10",
+  "theme": "back_rank, bishop_pair, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0028",
+  "fen": "rnbr2k1/1p1p1pp1/p2p3p/4p3/2P1q3/BP6/P2PP1PP/R2QKB1R w KQ - 3 14",
+  "theme": "bishop_pair, doubled_pawns, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0029",
+  "fen": "rnbr2k1/1p1p1pp1/p2p3p/4p3/2P1q3/BP6/P2PP1PP/RQ2KB1R b KQ - 4 14",
+  "theme": "bishop_pair, doubled_pawns, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0030",
+  "fen": "rnq2knr/p4pp1/4p2p/2ppP3/2PP2Q1/P7/2P1NPPP/R1BK3R b - - 0 12",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0031",
+  "fen": "r3r1k1/pppb1pbp/n4np1/4B3/2P1P3/1PN2N2/P4PPP/R3KB1R w KQ - 3 14",
+  "theme": "back_rank, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0032",
+  "fen": "r4rk1/1pp2b1p/2pq4/4pp1n/P6B/P2P1PP1/2PNQ2P/R4R1K b - - 3 20",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0033",
+  "fen": "r1b1k1nr/p1ppbppp/2p5/8/8/1NP5/PP2BPPP/R1B1K2R w KQkq - 3 11",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0034",
+  "fen": "r1b1k1nr/p1ppbppp/8/2p5/6P1/1NP5/PP2BP1P/R1B1K2R w KQkq - 0 12",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0035",
+  "fen": "rnbq1rk1/2p1ppbp/p5p1/1N1n4/Q2P4/4P3/PP1B1PPP/R3KBNR w KQ - 0 9",
+  "theme": "back_rank, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0036",
+  "fen": "rn1q1rk1/1Qp2pbp/p5p1/3n4/3p4/2N1P3/PP1B1PPP/R3KBNR b KQ - 0 12",
+  "theme": "back_rank, bishop_pair, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0037",
+  "fen": "r1b2rk1/p1q1n1pp/2p5/3p2p1/NP1p2P1/BB5P/P1P5/R2Q2KR w - - 2 18",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0038",
+  "fen": "r1k5/pppb1ppr/3bq3/Q3p1p1/8/P4BP1/1P1PPP1P/1RB1K2R w K - 7 15",
+  "theme": "back_rank, doubled_pawns, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0039",
+  "fen": "rn2kb1r/pp2pp1p/2p4p/8/1q2N3/3P2P1/PP3P1P/R1Q1K1NR w KQkq - 2 12",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0040",
+  "fen": "2rk4/5p1p/2nbp2p/1p6/1pR5/3P2P1/P2K1P1P/6NR w - - 0 24",
+  "theme": "doubled_pawns, isolated_pawn, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0041",
+  "fen": "r2qk2r/2p2pp1/p1ppbn1p/8/4P3/P1QBB3/P1P2PPP/R3K2R b KQkq - 1 12",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0042",
+  "fen": "r1b1k1nr/pp1p1ppp/2p5/8/1b2P1P1/8/PPP2P1P/RNB1KB1R w KQkq - 1 9",
+  "theme": "middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0043",
+  "fen": "r1b1k1nr/pp1n1p1p/2q1p1p1/1N1p4/1b1P2P1/2P1B2N/PP3P1P/R2QKBR1 b Qkq - 0 11",
+  "theme": "king_safety, loose_pieces, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0044",
+  "fen": "r1b1k1nr/1pqn1p1p/p3p1p1/3p4/1P1P2P1/4B2N/PP3P1P/R2QKBR1 b Qkq - 0 13",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0045",
+  "fen": "r1b1k2r/1pqnnp1p/p3p1p1/3p2B1/1P1P2P1/7N/PP3P1P/R2QKBR1 b Qkq - 2 14",
+  "theme": "back_rank, bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0046",
+  "fen": "r1b1k2r/1p1nnp1p/p3p1p1/3p2B1/1q1P2P1/7N/PP3PBP/R2QK1R1 w Qkq - 0 16",
+  "theme": "back_rank, bishop_pair, isolated_pawn, king_safety, loose_pieces, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0047",
+  "fen": "r1b1k2r/1p1nnp1p/p3p1p1/3p2B1/3P2P1/7N/PP1K1PBP/R5R1 b kq - 0 17",
+  "theme": "back_rank, bishop_pair, isolated_pawn, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0048",
+  "fen": "1rbqkb1r/1p1n1p2/p3pp2/7P/3PN3/1Q5N/PP2BP1P/R3K2R b KQk - 2 14",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, middlegame, open_file, passed_pawn",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0049",
+  "fen": "1rb1kb1r/1p1n1p2/p3pp2/q6P/3PN3/1Q5N/PP2BP1P/R4K1R b k - 4 15",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, middlegame, open_file, passed_pawn",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0050",
+  "fen": "r1bqk2r/pp2nppp/3Np3/2ppP3/8/8/PPPQ1PPP/R3K1NR b KQkq - 2 10",
+  "theme": "king_safety, loose_pieces, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0051",
+  "fen": "rn2kbnr/pp3ppp/2p5/4P3/8/2N5/PPP1NPPP/R1BK3R b kq - 0 9",
+  "theme": "middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0052",
+  "fen": "r1b1k2r/pppp1pp1/2n2q1p/8/1bP5/3BPN2/PP2KPPP/R1BQ3R b kq - 2 9",
+  "theme": "king_safety, middlegame",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0053",
+  "fen": "r1b2rk1/pppp1pp1/1b5p/8/Q1Pq3P/3B4/PP1NKPP1/R1B4R w - - 0 14",
+  "theme": "back_rank, king_safety, middlegame, open_file",
+  "rating": 1100
+ },
+ {
+  "id": "spar-0054",
+  "fen": "r1bq1knr/pp3ppp/4p3/2PpP3/8/2P4N/P1P2PPP/R2QKB1R b KQ - 0 9",
+  "theme": "doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0055",
+  "fen": "1rb2q1r/pppp1kp1/1bP5/4p2p/Q7/7P/PP1PPPP1/R1B1KB1R b KQ - 0 12",
+  "theme": "back_rank, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0056",
+  "fen": "rn1qk2r/pp1bbpp1/4pn2/2p3Bp/2QP4/2N1P3/PP3PPP/R3KBNR w KQkq - 0 9",
+  "theme": "back_rank, king_safety, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0057",
+  "fen": "r2qk2r/pp1bbp2/2n1pp2/2p4p/2QP4/2N1P3/PP2BPPP/3RK1NR b Kkq - 1 11",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0058",
+  "fen": "2r1k2r/pp1bbp2/1qn1pp2/2p4p/2QP4/2N1PN2/PP2BPPP/1R2K2R w Kk - 6 14",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0059",
+  "fen": "2r1k2r/pp1bbp2/1q2pp2/n1p4p/2QP4/2N1PN2/PP2BPPP/1R2KR2 w k - 8 15",
+  "theme": "back_rank, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0060",
+  "fen": "2r1k2r/pp1b1p2/4pp2/n1b4p/8/2N1PN2/PP2BPPP/1R2KR2 w k - 0 17",
+  "theme": "doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0061",
+  "fen": "2r1k2r/pp1b1p2/4pp2/n1b4p/4N3/4PN2/PP2BPPP/1R2KR2 b k - 1 17",
+  "theme": "doubled_pawns, isolated_pawn, loose_pieces, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0062",
+  "fen": "2r1k2r/pp1b1p2/2n1pp2/1B5p/8/4PN2/PP1K1PPP/1R3R2 b k - 2 20",
+  "theme": "doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0063",
+  "fen": "2r1k2r/pp1b1p2/2n1pp2/1B6/7p/4PN2/PP1K1PPP/3R1R2 b k - 1 21",
+  "theme": "doubled_pawns, isolated_pawn, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0064",
+  "fen": "rnbqk2r/1p2bppp/p3p3/3p2B1/3Pn3/N1P2N2/PP3PPP/R2QKB1R w KQkq - 2 9",
+  "theme": "king_safety, loose_pieces, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0065",
+  "fen": "rnb1kq1r/1p3ppp/p3pn2/3pN3/3P3P/N1P5/PP2BPP1/R2QK2R b KQkq - 4 12",
+  "theme": "king_safety, middlegame",
+  "rating": 1500
+ },
+ {
+  "id": "spar-0066",
+  "fen": "r1b1k1r1/ppppqpp1/2n1pn2/7p/2PP4/2P1PQ2/PB2BPPP/R3K1NR w KQq - 2 9",
+  "theme": "back_rank, bishop_pair, doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0067",
+  "fen": "r1b1k1r1/ppppqp2/2n1pn2/6pp/2PP1Q2/2P1P3/PB2BPPP/R3K1NR w KQq - 0 10",
+  "theme": "back_rank, bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0068",
+  "fen": "r1bk1b1r/1pp2pp1/2p2n1p/8/p3P2P/P1N5/1PP2PP1/R1B1KB1R w KQ - 0 10",
+  "theme": "doubled_pawns, middlegame, open_file",
+  "rating": 1300
+ },
+ {
+  "id": "spar-0069",
+  "fen": "r1b2knr/ppq2ppp/2n1p3/2ppP3/3P4/P1P5/1BPQ1PPP/3RKBNR b K - 6 9",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, loose_pieces, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0070",
+  "fen": "r1b2knr/pp3ppp/2n1p3/q1ppP3/3P4/P1P5/1BPQ1PPP/3RKBNR w K - 7 10",
+  "theme": "bishop_pair, doubled_pawns, isolated_pawn, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0071",
+  "fen": "r1b2knr/pp3ppp/2n1p3/q2pP3/3P4/P7/1BPQ1PPP/1R2KBNR b K - 0 11",
+  "theme": "bishop_pair, isolated_pawn, king_safety, middlegame",
+  "rating": 900
+ },
+ {
+  "id": "spar-0072",
+  "fen": "r2qk2r/1pp2ppp/p1pb4/4pb2/1P2n3/P4N2/2PP1PPP/RNBQ1RK1 w kq - 1 9",
+  "theme": "back_rank, doubled_pawns, king_safety, middlegame",
+  "rating": 1700
+ },
+ {
+  "id": "spar-0073",
+  "fen": "rnb1k2r/pppp1ppp/4p3/8/2PPn1Pq/2P1B2P/P3PP2/R2QKBNR w KQkq - 1 10",
+  "theme": "back_rank, bishop_pair, doubled_pawns, isolated_pawn, loose_pieces, middlegame",
+  "rating": 900
+ }
+]

@@ -1,0 +1,132 @@
+# Strategic / tactical / cognitive-scaffolding knowledge for the Socratic coach.
+# RULE: no concrete moves or sequences. Concepts and questions only.
+- id: imbalance-activity
+  title: Compare piece activity
+  tags: [middlegame, conceptual, activity]
+  text: Before calculating, compare how active each side's least useful piece is. The side whose worst piece has a clear improvement route often holds the long-term trumps.
+  question: Which of your pieces contributes least right now, and where would it be happier?
+- id: imbalance-king-safety
+  title: King safety outranks material
+  tags: [king_safety, opposite_side_castling, mating_attack, middlegame]
+  text: When the pawn shield in front of a king is thinned, every open line toward it becomes a liability. Count attackers versus defenders near each king before grabbing material.
+  question: Count the attackers and defenders near each king. Which king is easier to approach?
+- id: back-rank
+  title: Back-rank awareness
+  tags: [back_rank, back_rank_weakness, rook_endgame, endgame]
+  text: A king with no escape square on the second rank can be mated by a single heavy piece arriving on the first rank. Luft, or a defender covering the rank, removes the danger.
+  question: If an enemy heavy piece landed on your first rank, would your king have anywhere to go?
+- id: loose-pieces
+  title: Loose pieces drop off
+  tags: [loose_pieces, hanging_piece, material_blunder, tactics]
+  text: Undefended pieces are the raw material of combinations. Double attacks, forks and discovered attacks almost always target a loose piece or an unguarded king.
+  question: Which pieces on the board are undefended or defended fewer times than they are attacked?
+- id: forks
+  title: Double attacks
+  tags: [fork, allows_fork, tactics, knight]
+  text: A double attack works when the defender cannot meet both threats with one move. Look for squares from which one piece hits two targets of higher value or one target plus the king.
+  question: Are there two enemy targets that a single piece of yours could hit at once?
+- id: pins
+  title: Pins and skewers
+  tags: [pin, skewer, allows_pin, tactics]
+  text: When two valuable pieces stand on the same line, a long-range piece can pin the front one or skewer it to win the one behind. Unpinning costs tempo.
+  question: Which pieces are standing on the same line as a more valuable piece behind them?
+- id: discovered
+  title: Discovered attacks
+  tags: [discovered_attack, tactics]
+  text: A piece that moves off a line can unmask an attack by the piece behind it. The moving piece is then free to create a second threat, which makes discoveries especially forcing.
+  question: Which of your long-range pieces is currently blocked by one of your own pieces?
+- id: overloading
+  title: Overloaded defenders
+  tags: [overloading, deflection, tactics]
+  text: A defender that guards two things can only fulfil one duty at a time. Attack one of its charges and the other becomes vulnerable.
+  question: Is any enemy piece doing two defensive jobs at once?
+- id: zwischenzug
+  title: In-between moves
+  tags: [zwischenzug, calculation_horizon_error, calculation]
+  text: Before making an automatic recapture, check whether a forcing in-between move (a check, a capture, or a bigger threat) changes the outcome of the exchange.
+  question: In the sequence you calculated, is there a forcing move either side could insert before the obvious recapture?
+- id: prophylaxis
+  title: Prophylactic thinking
+  tags: [prophylaxis, missed_prophylaxis, conceptual]
+  text: Ask what your opponent wants to do if it were their move again. Preventing the opponent's best plan is often worth more than pursuing your own.
+  question: If you passed your turn, what would your opponent do to you?
+- id: horizon
+  title: Calculate to a quiet position
+  tags: [calculation_horizon_error, calculation, cdi]
+  text: Stop calculating only when the position is quiet, with no checks, captures or direct threats pending. Evaluations made in the middle of a forcing sequence are unreliable.
+  question: At the end of your line, does anyone still have a check, a capture or a threat available?
+- id: candidates
+  title: Candidate-move discipline
+  tags: [candidates, metacognition, planning]
+  text: List forcing moves first (checks, captures, threats) for both sides, then quiet improving moves. Compare candidates by the opponent's best reply, not by your hopes.
+  question: Have you listed every check, capture and threat for both sides?
+- id: blunder-check
+  title: The blunder check
+  tags: [impulse_inhibition, trap, material_blunder]
+  text: The move that looks most natural is the one your opponent expects. Before committing, ask what changes on the board after your move and what new target or line you have created.
+  question: What does your move stop defending, and which lines does it open?
+- id: isolated-pawn
+  title: The isolated pawn
+  tags: [isolated_pawn, middlegame, pawn_structure]
+  text: An isolated pawn grants open lines and active pieces but becomes a target as pieces are traded. The square in front of it is an ideal outpost for the defender.
+  question: Does trading pieces help or hurt the side with the isolated pawn here?
+- id: passed-pawn
+  title: Passed pawns must be pushed
+  tags: [passed_pawn, endgame, pawn_structure]
+  text: A passed pawn ties down enemy pieces. Support it with the king in the endgame; blockade it with a minor piece when defending.
+  question: Who controls the square directly in front of the most advanced passed pawn?
+- id: doubled
+  title: Doubled pawns
+  tags: [doubled_pawns, pawn_structure]
+  text: Doubled pawns lose flexibility but often open a half-open file for the rooks. Judge them by the files they open and the squares they control.
+  question: Which half-open files exist, and who can use them first?
+- id: open-file
+  title: Open files belong to rooks
+  tags: [open_file, rook_endgame, middlegame]
+  text: Rooks need open or half-open files. Contest an open file before your opponent doubles on it, and look for an entry square on the seventh rank.
+  question: Which files are open, and whose rooks can reach them faster?
+- id: rook-activity
+  title: Active rook in rook endgames
+  tags: [rook_endgame, endgame, activity]
+  text: In rook endgames activity usually matters more than a pawn. Rooks belong behind passed pawns, and the king must be cut off along a rank or file.
+  question: Is your rook active or passive, and can it cut off the enemy king?
+- id: kp-opposition
+  title: Opposition and key squares
+  tags: [king_and_pawn_endgame, endgame]
+  text: In king-and-pawn endings, the defending king aims for the square in front of the pawn; the attacking king aims for the key squares two ranks ahead of the pawn. Opposition decides who gives way.
+  question: Which squares does your king need to reach for the pawn to promote?
+- id: bishop-pair
+  title: The bishop pair
+  tags: [bishop_pair, middlegame]
+  text: Two bishops thrive in open positions. The side facing them should keep the position closed and seek an exchange of one bishop.
+  question: Is the position opening or closing, and who benefits?
+- id: conversion
+  title: Converting an advantage
+  tags: [endgame, conversion, tempo_compression]
+  text: When ahead, simplify by trading pieces rather than pawns, remove counterplay before pushing, and avoid allowing perpetual check.
+  question: What is the opponent's only source of counterplay, and how can you remove it first?
+- id: defence
+  title: Defending worse positions
+  tags: [perspective_flip, defence]
+  text: When defending, activate the worst piece, trade the opponent's best attacker and look for counter-chances rather than passive waiting.
+  question: Which enemy piece is doing the most damage, and can you trade it?
+- id: coordination
+  title: Coordination without a key piece
+  tags: [constraint_shift, coordination, endgame]
+  text: When one unit is unavailable, the others must cover its duties. Re-assign each task (defending a pawn, cutting the king, controlling a file) to the remaining pieces.
+  question: List what the restricted piece was doing and which remaining piece can take over each job.
+- id: wm-anchor
+  title: Anchoring the mental board
+  tags: [blindfold, working_memory]
+  text: When visualising, anchor on the kings and the pieces that moved last. Re-derive attack lines from coordinates rather than trying to picture the whole board at once.
+  question: Name the squares of both kings and of the last piece that moved.
+- id: recall-chunking
+  title: Chunk positions into structures
+  tags: [recall, episodic_memory]
+  text: Strong players remember positions as pawn structures plus piece clusters. Rebuild the pawn skeleton first, then the kings, then pieces by function.
+  question: What was the pawn structure in the critical moment?
+- id: pace
+  title: Pacing and fatigue
+  tags: [fatigue, metacognition]
+  text: Rising response times with falling accuracy signal fatigue. Slow down, verbalise the threat check, and accept a simpler plan.
+  question: What is the one threat you must not overlook right now?
