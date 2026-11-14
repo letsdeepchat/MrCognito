@@ -127,3 +127,20 @@ async def test_rag_retrieves_relevant_principles():
     assert any(h.id == "back-rank" for h in hits)
     for c in store.chunks:  # knowledge base must be move-free
         assert check_output(c.text, OutputPolicy()) == [], c.id
+
+
+def test_vision_grid_mapping_and_validation():
+    import numpy as np
+
+    from app.vision.recognizer import CLASSES, detections_to_fen
+
+    corners = np.array([[100, 100], [900, 100], [900, 900], [100, 900]], dtype=float)  # 100 px squares
+
+    def det(sq: str, sym: str):
+        f, r = "abcdefgh".index(sq[0]), int(sq[1]) - 1
+        return (100 + f * 100 + 50, 100 + (7 - r) * 100 + 90, CLASSES.index(sym), 0.9)
+
+    res = detections_to_fen([det("e1", "K"), det("e8", "k"), det("d1", "Q")], corners, "w")
+    assert res.valid and res.fen.startswith("4k3/8/8/8/8/8/8/3QK3 w")
+    bad = detections_to_fen([det("e1", "K"), det("a1", "P")], corners, "w")
+    assert not bad.valid and "no black king" in bad.issues

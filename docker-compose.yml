@@ -1,0 +1,41 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: cognito
+      POSTGRES_PASSWORD: cognito
+      POSTGRES_DB: cognito
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cognito"]
+      interval: 3s
+      retries: 20
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        STOCKFISH_SOURCE: ${STOCKFISH_SOURCE:-source}   # "apt" for a fast build with the distro engine
+        SF_REF: ${SF_REF:-sf_19}
+        SF_ARCH: ${SF_ARCH:-x86-64-avx2}
+    environment:
+      COGNITO_DATABASE_URL: postgresql+asyncpg://cognito:cognito@db:5432/cognito
+      COGNITO_RAG_BACKEND: pgvector
+      COGNITO_LLM_PROVIDER: ${COGNITO_LLM_PROVIDER:-rule}       # rule | anthropic | openai_compat
+      COGNITO_LLM_MODEL: ${COGNITO_LLM_MODEL:-claude-opus-5-5}
+      COGNITO_LLM_BASE_URL: ${COGNITO_LLM_BASE_URL:-http://llm:8001/v1}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      COGNITO_HUMAN_MODEL: ${COGNITO_HUMAN_MODEL:-heuristic}  # maia2 needs requirements-ml.txt + weights
+      COGNITO_STOCKFISH_POOL_SIZE: "2"
+      COGNITO_CORS_ORIGINS: http://localhost:8080
+    depends_on:
+      db: { condition: service_healthy }
+    ports: ["8000:8000"]
+
+  frontend:
+    build: ./frontend
+    depends_on: [backend]
+    ports: ["8080:8080"]
+
+volumes:
+  pgdata:

@@ -49,11 +49,12 @@ async def init(ctx: Ctx) -> dict:
                                                           UserPosition.consumed.is_(False)).limit(1))).scalar_one_or_none()
     if up is not None:
         up.consumed = True
-        pos = {"id": f"user-{up.id}", "fen": up.fen, "theme": "your own position"}
+        pos = {"id": f"user-{up.id}", "fen": up.fen, "theme": "your own position"}  # the only theme shown
     else:
         pos = pick_sparring(ctx.st.get("difficulty", ctx.profile.difficulty_rating), rng)
     board = chess.Board(pos["fen"])
-    st = {"start_fen": pos["fen"], "theme": pos.get("theme", ""), "user_color": "white" if board.turn else "black",
+    # Mined positions carry structural tags (e.g. back_rank) that would act as hints, so they are not shown.
+    st = {"start_fen": pos["fen"], "theme": pos["theme"] if up is not None else "", "user_color": "white" if board.turn else "black",
           "opponent_elo": ctx.profile.estimated_human_elo + 100, "moves_made": 0,
           "max_moves": items_for(Phase.SPARRING_VERBALIZED, ctx.session.budget_minutes), "history": [],
           "last_opponent_san": None, "done": False}

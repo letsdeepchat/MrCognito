@@ -101,6 +101,8 @@ async def _profile_view(db: AsyncSession, prof: CognitiveProfile) -> dict:
 @router.get("/health")
 async def health() -> dict:
     eng = get_engine()
+    if hasattr(eng, "start"):
+        await eng.start()
     return {"ok": True, "engine": getattr(eng, "version", eng.name), "human_model": get_human_model().name,
             "coach": get_coach().llm.name}
 

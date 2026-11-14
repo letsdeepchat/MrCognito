@@ -170,13 +170,13 @@ def _tension_phrase(t: dict | None) -> str:
         return ""
     bits = []
     if t["own_pieces_insufficiently_defended"]:
-        bits.append("one of your own pieces there is defended fewer times than it is attacked")
+        bits.append("one of your own pieces is defended fewer times than it is attacked")
     if t["opponent_pieces_insufficiently_defended"]:
-        bits.append("an enemy piece there is loose")
+        bits.append("an enemy piece is loose")
     if t["own_king_in_sector"] and t["pressure_balance"] == "unfavourable":
         bits.append("your king lives there and the pressure is not in your favour")
     if not bits:
-        bits.append(f"{t['contested_squares']} squares there are contested by both sides")
+        bits.append(f"{t['contested_squares']} squares are contested by both sides")
     return "; ".join(bits)
 
 
@@ -223,7 +223,7 @@ def compose(task: dict, results: dict, strict: bool = False) -> dict:
                     "concepts": concepts}
         msg = "Your reasoning hangs together." if v.get("decision") == "coherent" else "Reasonable, with one caution."
         if tension:
-            msg += f" Keep in mind that in the {sector} {tension}."
+            msg += f" Keep in mind that on the {sector}, {tension}."
         return {"message": msg, "question": rag_q, "concepts": concepts}
     if kind == "refusal":
         return {"message": "I won't hand you the move or an evaluation; finding it is the workout.",
@@ -234,7 +234,7 @@ def compose(task: dict, results: dict, strict: bool = False) -> dict:
                 "concepts": concepts}
     msg = "Let's think it through together."
     if tension:
-        msg += f" In the {sector}, {tension}."
+        msg += f" On the {sector}, {tension}."
     return {"message": msg, "question": rag_q, "concepts": concepts}
 
 
