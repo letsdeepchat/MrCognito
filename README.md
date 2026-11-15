@@ -72,8 +72,8 @@ See [docs/STATUS.md](docs/STATUS.md) for the verification log and each pluggable
 pick this repo, **Apply**. The app is then at `https://<service-name>.onrender.com` (UI at `/`, API at `/api`).
 Free tier: the service sleeps after ~15 idle minutes (about a minute to wake), runs on 0.1 CPU (the
 Blueprint lowers analysis depth to 10), and the free database expires after 30 days unless upgraded.
-To bake the URL into the APK, set the repository variable `COGNITO_API_BASE` to it and re-run the
-"Android APK" workflow.
+The APK defaults to `https://mrcognito.onrender.com`; to point builds elsewhere set the repository
+variable `COGNITO_API_BASE` and re-run the "Android APK" workflow.
 
 ## Android app (APK)
 
