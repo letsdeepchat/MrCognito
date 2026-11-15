@@ -1,0 +1,51 @@
+name: Android APK
+
+on:
+  push:
+    branches: [main]
+    paths: ["frontend/**", ".github/workflows/android-apk.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@v3
+      - run: npm ci
+      - run: npm run build
+      - run: npx cap sync android
+      - name: Build debug APK
+        working-directory: frontend/android
+        run: chmod +x gradlew && ./gradlew --no-daemon assembleDebug
+      - name: Rename
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk ../MrCognito-debug.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MrCognito-debug-apk
+          path: MrCognito-debug.apk
+      - name: Publish to the "android-latest" release
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete android-latest --yes --cleanup-tag || true
+          gh release create android-latest MrCognito-debug.apk \
+            --title "MrCognito Android (latest build)" \
+            --notes "Debug-signed APK built from ${GITHUB_SHA::7}. Sideload it, then enter your backend URL (e.g. http://<your-computer-LAN-IP>:8000) on first launch." \
+            --prerelease

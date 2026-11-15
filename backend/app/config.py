@@ -54,7 +54,7 @@ class Settings(BaseSettings):
     # --- vision ------------------------------------------------------------
     vision_onnx_path: str = ""
 
-    cors_origins: str = "http://localhost:5173,http://localhost:8080"
+    cors_origins: str = "http://localhost:5173,http://localhost:8080,https://localhost,capacitor://localhost"
 
 
 @lru_cache

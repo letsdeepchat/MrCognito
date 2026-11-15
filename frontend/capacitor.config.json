@@ -1,0 +1,7 @@
+{
+  "appId": "com.letsdeepchat.mrcognito",
+  "appName": "MrCognito",
+  "webDir": "dist",
+  "android": { "allowMixedContent": true },
+  "server": { "androidScheme": "https", "cleartext": true }
+}

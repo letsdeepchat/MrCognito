@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { api, ApiError } from "./api/client";
+import { api, ApiError, getServer, isNative, setServer } from "./api/client";
 import type { PhaseName, Profile, SessionView } from "./api/types";
 import { Dashboard } from "./components/Dashboard";
 import { WellnessNotice, type Ctl } from "./components/Panels";
@@ -67,7 +67,7 @@ export default function App() {
     }
   }
 
-  if (error && !profile) return <main className="shell"><p className="warn">{error}</p></main>;
+  if ((isNative && !getServer()) || (error && !profile)) return <ServerSetup error={error} />;
   if (!profile) return <main className="shell"><p className="muted">Loading…</p></main>;
   if (!profile.wellness_acknowledged) {
     return (
@@ -173,6 +173,22 @@ function Home({ profile, session, onStart }: { profile: Profile; session: Sessio
   );
 }
 
+function ServerSetup({ error }: { error: string | null }) {
+  const [url, setUrl] = useState(getServer() || "http://192.168.1.10:8000");
+  return (
+    <main className="shell narrow">
+      <h1>Cognito</h1>
+      <section className="card stack">
+        <h3>Connect to your Cognito server</h3>
+        <p className="muted small">The app talks to the backend you run with docker compose. Enter its address as seen from this phone (same Wi-Fi: your computer's LAN IP and port 8000).</p>
+        {error && <p className="warn">{error}</p>}
+        <input value={url} onChange={(e) => setUrl(e.target.value)} inputMode="url" autoCapitalize="off" />
+        <button className="primary" onClick={() => { setServer(url); window.location.reload(); }}>Connect</button>
+      </section>
+    </main>
+  );
+}
+
 function SettingsView({ profile, setProfile }: { profile: Profile; setProfile: (p: Profile) => void }) {
   const [msg, setMsg] = useState<string | null>(null);
   const [fen, setFen] = useState("");
@@ -207,6 +223,13 @@ function SettingsView({ profile, setProfile }: { profile: Profile; setProfile: (
         <div className="row"><input value={fen} onChange={(e) => setFen(e.target.value)} placeholder="FEN" /><button onClick={addFen}>Save</button></div>
         <label className="small">Photo of a board<input type="file" accept="image/*" capture="environment" onChange={(e) => photo(e.target.files?.[0])} /></label>
       </div>
+      {isNative && (
+        <div className="card">
+          <h3>Server</h3>
+          <p className="muted small mono">{getServer()}</p>
+          <button onClick={() => { setServer(""); window.location.reload(); }}>Change server</button>
+        </div>
+      )}
       {msg && <p className="notice">{msg}</p>}
       <WellnessNotice text={profile.wellness_notice} compact />
     </section>

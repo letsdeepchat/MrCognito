@@ -64,3 +64,20 @@ fatigue curve, and a staircase that steers difficulty toward ~72 % success.
 ## What is real, what is stubbed
 
 See [docs/STATUS.md](docs/STATUS.md) for the verification log and each pluggable adapter.
+
+## Android app (APK)
+
+Every push to `main` that touches `frontend/` builds a debug-signed APK in GitHub Actions
+(`.github/workflows/android-apk.yml`) and publishes it to the **`android-latest`** release:
+<https://github.com/letsdeepchat/MrCognito/releases/tag/android-latest>.
+
+1. Run the backend where the phone can reach it, e.g. `docker compose up --build` on a computer on the same
+   Wi-Fi (the API listens on port 8000 on all interfaces).
+2. Install the APK (allow "install unknown apps" for your browser or file manager).
+3. On first launch enter the server address, e.g. `http://192.168.1.10:8000` (your computer's LAN IP).
+   You can change it later under Settings → Server.
+
+The app is the same React UI wrapped with Capacitor 8 (`frontend/android`). Build it yourself with
+`cd frontend && npm ci && npm run build && npx cap sync android && cd android && ./gradlew assembleDebug`.
+Push-to-talk relies on the Web Speech API, which the Android WebView usually lacks, so the plan gate falls back
+to typing there.

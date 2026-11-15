@@ -1,6 +1,22 @@
 import type { ActionResult, Dashboard, Hint, Profile, SessionView } from "./types";
 
 const TOKEN_KEY = "cognito.token";
+const SERVER_KEY = "cognito.server";
+
+/** Native builds (the Android APK) have no same-origin backend, so the server URL is configurable. */
+export const isNative = typeof (window as any).Capacitor !== "undefined" && (window as any).Capacitor.isNativePlatform?.();
+
+export function getServer(): string {
+  try {
+    const saved = localStorage.getItem(SERVER_KEY);
+    if (saved) return saved.replace(/\/+$/, "");
+  } catch { /* storage unavailable */ }
+  return (import.meta.env.VITE_API_BASE ?? "").replace(/\/+$/, "");
+}
+
+export function setServer(url: string) {
+  try { localStorage.setItem(SERVER_KEY, url.trim().replace(/\/+$/, "")); } catch { /* ignore */ }
+}
 
 export class ApiError extends Error {
   constructor(public status: number, public code: string, message: string, public detail: any) {
@@ -22,7 +38,7 @@ async function req<T>(path: string, init: RequestInit = {}): Promise<T> {
   const headers: Record<string, string> = { ...(init.headers as Record<string, string>) };
   if (!(init.body instanceof FormData)) headers["Content-Type"] = "application/json";
   if (token) headers.Authorization = `Bearer ${token}`;
-  const r = await fetch(path, { ...init, headers });
+  const r = await fetch(getServer() + path, { ...init, headers });
   const text = await r.text();
   const body = text ? JSON.parse(text) : null;
   if (!r.ok) {
