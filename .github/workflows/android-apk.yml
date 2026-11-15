@@ -29,7 +29,11 @@ jobs:
       - name: Use the runner's preinstalled Android SDK
         run: echo "sdk.dir=$ANDROID_HOME" > android/local.properties
       - run: npm ci
-      - run: npm run build
+      - name: Build the web bundle
+        # Set the repository variable COGNITO_API_BASE (e.g. https://mrcognito.onrender.com) to bake a default server into the APK.
+        env:
+          VITE_API_BASE: ${{ vars.COGNITO_API_BASE }}
+        run: npm run build
       - run: npx cap sync android
       - name: Build debug APK
         working-directory: frontend/android
@@ -48,5 +52,5 @@ jobs:
           gh release delete android-latest --yes --cleanup-tag || true
           gh release create android-latest MrCognito-debug.apk \
             --title "MrCognito Android (latest build)" \
-            --notes "Debug-signed APK built from ${GITHUB_SHA::7}. Sideload it, then enter your backend URL (e.g. http://<your-computer-LAN-IP>:8000) on first launch." \
+            --notes "Debug-signed APK built from ${GITHUB_SHA::7}. Default server: ${{ vars.COGNITO_API_BASE || 'none (enter it on first launch)' }}." \
             --prerelease

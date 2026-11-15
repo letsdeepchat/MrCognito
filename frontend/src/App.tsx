@@ -68,7 +68,7 @@ export default function App() {
   }
 
   if ((isNative && !getServer()) || (error && !profile)) return <ServerSetup error={error} />;
-  if (!profile) return <main className="shell"><p className="muted">Loading…</p></main>;
+  if (!profile) return <main className="shell"><p className="muted">Loading… A free-tier server that has been asleep can take up to a minute to wake up.</p></main>;
   if (!profile.wellness_acknowledged) {
     return (
       <main className="shell narrow">
@@ -174,13 +174,13 @@ function Home({ profile, session, onStart }: { profile: Profile; session: Sessio
 }
 
 function ServerSetup({ error }: { error: string | null }) {
-  const [url, setUrl] = useState(getServer() || "http://192.168.1.10:8000");
+  const [url, setUrl] = useState(getServer() || "https://mrcognito.onrender.com");
   return (
     <main className="shell narrow">
       <h1>Cognito</h1>
       <section className="card stack">
         <h3>Connect to your Cognito server</h3>
-        <p className="muted small">The app talks to the backend you run with docker compose. Enter its address as seen from this phone (same Wi-Fi: your computer's LAN IP and port 8000).</p>
+        <p className="muted small">Enter your Cognito server's address, e.g. your Render URL (https://your-name.onrender.com) or http://your-computer-LAN-IP:8000 for a server on your Wi-Fi.</p>
         {error && <p className="warn">{error}</p>}
         <input value={url} onChange={(e) => setUrl(e.target.value)} inputMode="url" autoCapitalize="off" />
         <button className="primary" onClick={() => { setServer(url); window.location.reload(); }}>Connect</button>

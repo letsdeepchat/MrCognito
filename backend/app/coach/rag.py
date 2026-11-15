@@ -117,7 +117,9 @@ def get_store():
     if _store is None:
         from ..config import get_settings
 
-        if get_settings().rag_backend == "pgvector":
+        from .. import db
+
+        if get_settings().rag_backend == "pgvector" and db.vector_available:
             from ..db import sessionmaker
 
             _store = PgVectorStore(sessionmaker())

@@ -1,9 +1,11 @@
 """Runtime configuration. Every knob is an env var prefixed ``COGNITO_``."""
 from __future__ import annotations
 
+import re
 from functools import lru_cache
 from typing import Literal
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -54,7 +56,22 @@ class Settings(BaseSettings):
     # --- vision ------------------------------------------------------------
     vision_onnx_path: str = ""
 
+    # Built frontend to serve at "/" (set in the single-image Render deploy).
+    static_dir: str = ""
+
     cors_origins: str = "http://localhost:5173,http://localhost:8080,https://localhost,capacitor://localhost"
+
+    @field_validator("database_url")
+    @classmethod
+    def _async_driver(cls, v: str) -> str:
+        # Hosting providers (Render, Heroku, ...) hand out postgres:// or postgresql:// URLs.
+        return re.sub(r"^postgres(ql)?://", "postgresql+asyncpg://", v)
+
+    @field_validator("cors_origins")
+    @classmethod
+    def _schemes(cls, v: str) -> str:
+        # Bare hostnames (e.g. Render's fromService host) become https origins.
+        return ",".join(o if "://" in o else f"https://{o}" for o in (x.strip() for x in v.split(",")) if o)
 
 
 @lru_cache

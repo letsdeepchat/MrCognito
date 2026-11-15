@@ -65,16 +65,26 @@ fatigue curve, and a staircase that steers difficulty toward ~72 % success.
 
 See [docs/STATUS.md](docs/STATUS.md) for the verification log and each pluggable adapter.
 
+## Deploy to Render (no local server)
+
+`render.yaml` is a Render Blueprint: one free web service built from the root `Dockerfile`
+(React UI + FastAPI + Stockfish on one origin) and one free Postgres. On Render: **New → Blueprint**,
+pick this repo, **Apply**. The app is then at `https://<service-name>.onrender.com` (UI at `/`, API at `/api`).
+Free tier: the service sleeps after ~15 idle minutes (about a minute to wake), runs on 0.1 CPU (the
+Blueprint lowers analysis depth to 10), and the free database expires after 30 days unless upgraded.
+To bake the URL into the APK, set the repository variable `COGNITO_API_BASE` to it and re-run the
+"Android APK" workflow.
+
 ## Android app (APK)
 
 Every push to `main` that touches `frontend/` builds a debug-signed APK in GitHub Actions
 (`.github/workflows/android-apk.yml`) and publishes it to the **`android-latest`** release:
 <https://github.com/letsdeepchat/MrCognito/releases/tag/android-latest>.
 
-1. Run the backend where the phone can reach it, e.g. `docker compose up --build` on a computer on the same
-   Wi-Fi (the API listens on port 8000 on all interfaces).
+1. Run the backend where the phone can reach it: on Render (above), or `docker compose up --build` on a computer
+   on the same Wi-Fi (the API listens on port 8000 on all interfaces).
 2. Install the APK (allow "install unknown apps" for your browser or file manager).
-3. On first launch enter the server address, e.g. `http://192.168.1.10:8000` (your computer's LAN IP).
+3. On first launch enter the server address, e.g. `https://mrcognito.onrender.com` or `http://192.168.1.10:8000`.
    You can change it later under Settings → Server.
 
 The app is the same React UI wrapped with Capacitor 8 (`frontend/android`). Build it yourself with

@@ -1,0 +1,35 @@
+# Render Blueprint: Dashboard → New → Blueprint → pick this repo.
+# One free web service (UI + API + Stockfish, same origin) and one free Postgres.
+databases:
+  - name: mrcognito-db
+    plan: free
+    databaseName: cognito
+    user: cognito
+
+services:
+  - type: web
+    name: mrcognito
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    buildFilter:
+      ignoredPaths: ["frontend/android/**", "**/*.md", ".github/**"]
+    envVars:
+      - key: COGNITO_DATABASE_URL
+        fromDatabase: { name: mrcognito-db, property: connectionString }
+      - key: COGNITO_RAG_BACKEND
+        value: pgvector            # falls back to in-memory if the extension can't be created
+      # The free instance has 0.1 CPU / 512 MB: keep the engine light.
+      - key: COGNITO_STOCKFISH_POOL_SIZE
+        value: "1"
+      - key: COGNITO_STOCKFISH_HASH_MB
+        value: "32"
+      - key: COGNITO_ANALYSIS_DEPTH
+        value: "10"
+      - key: COGNITO_LLM_PROVIDER
+        value: rule                # set to "anthropic" and add ANTHROPIC_API_KEY for the Claude coach
+      - key: ANTHROPIC_API_KEY
+        sync: false

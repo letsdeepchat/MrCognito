@@ -6,6 +6,8 @@ Engine-derived data (best moves, PVs, evaluations) lives ONLY in
 """
 from __future__ import annotations
 
+import logging
+
 import uuid
 from datetime import date, datetime
 from typing import Any, AsyncIterator
@@ -133,6 +135,7 @@ class UserPosition(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+log = logging.getLogger(__name__)
 _engine = None
 _sessionmaker: async_sessionmaker[AsyncSession] | None = None
 
@@ -143,13 +146,22 @@ def init_engine(url: str | None = None) -> None:
     _sessionmaker = async_sessionmaker(_engine, expire_on_commit=False)
 
 
-async def create_all() -> None:
-    assert _engine is not None
-    async with _engine.begin() as conn:
-        if _engine.dialect.name == "postgresql":
-            from sqlalchemy import text
+vector_available = False
 
-            await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+
+async def create_all() -> None:
+    global vector_available
+    assert _engine is not None
+    if _engine.dialect.name == "postgresql":
+        from sqlalchemy import text
+
+        try:  # managed Postgres may not ship pgvector; the RAG store then falls back to memory
+            async with _engine.begin() as conn:
+                await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+            vector_available = True
+        except Exception as e:  # noqa: BLE001
+            log.warning("pgvector unavailable (%s); using the in-memory RAG store", e)
+    async with _engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
 
 
